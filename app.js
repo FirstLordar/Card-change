@@ -7,14 +7,15 @@ let heroes = [['Axe','Tank'],['Crystale','support']];
 function displayHeroes() {
     let heroesContainer = document.getElementById('heroesContainer');
     heroesContainer.innerHTML = '';
-    for (i = 0; i < heroNames.length; i++) {
+    for (i = 0; i < heroes.length; i++) {
     let newElement = document.createElement('div');
     newElement.innerHTML = `
-    <h3>${heroNames[i]}</h3>
-    <p>${heroCalsses[i]}</p>
+    <h3>${heroes[i][0]}</h3>
+    <p>${heroes[i][1]}</p>
     `
-    }
     heroesContainer.appendChild(newElement);
+    }
+    
 }
 
 function addHero () {
@@ -30,7 +31,7 @@ function addHero () {
     } else {
         alert('Введите имя Персонажа')
     }
-   // displayHeroes()
+   displayHeroes()
     
     nameInput.value = '';
     classInput.value = '';

@@ -9,8 +9,8 @@ a,
 
 body {
     background-image: url(/img/dota_fon.jpg);
-    background-position: ;
-    background-size: auto;
+    background-position: 20% 0;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -22,7 +22,7 @@ h1 {
 }
 
 .header {
-    height: 110px;
+    height: 100px;
     background: #000;
     margin: 0;
     padding: 0 150px;
@@ -35,12 +35,12 @@ h1 {
 }
 
 .header__title {
-    
+    padding-top: 25px;
 }
 
 .header__nav {
     display: flex;
-    padding: 50px 50px 0 50px;
+    padding: 20px 0 0 50px;
     align-items: center;
     gap: 25px;
 }
@@ -49,5 +49,10 @@ h1 {
     color: #fff;
     font-size: 24px;
     text-align: center;
+    
+}
+
+.section {
+    width: 1200px;
     
 }
