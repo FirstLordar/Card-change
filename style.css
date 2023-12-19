@@ -1,0 +1,53 @@
+a,
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/dota_fon.jpg);
+    background-position: ;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+}
+
+.header {
+    height: 110px;
+    background: #000;
+    margin: 0;
+    padding: 0 150px;
+    opacity: 0.8;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    
+}
+
+.header__nav {
+    display: flex;
+    padding: 50px 50px 0 50px;
+    align-items: center;
+    gap: 25px;
+}
+
+.header__nav--links {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    
+}
