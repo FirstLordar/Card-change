@@ -9,9 +9,13 @@ function displayHeroes() {
     heroesContainer.innerHTML = '';
     for (i = 0; i < heroes.length; i++) {
     let newElement = document.createElement('div');
+    newElement.className = "hero__table";
     newElement.innerHTML = `
+    <div class="hero__element">
+    
     <h3>${heroes[i][0]}</h3>
     <p>${heroes[i][1]}</p>
+    <div>
     `
     heroesContainer.appendChild(newElement);
     }
@@ -38,8 +42,6 @@ function addHero () {
 }
 
 addButton.onclick = addHero
-
-
 
 
 
