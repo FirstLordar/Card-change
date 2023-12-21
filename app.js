@@ -1,21 +1,23 @@
 let addButton = document.getElementById('addButton');
 let heroes = [['Axe','Tank'],['Crystale','support']];
-//let newHeroName = nameInput.value;
-//let newHeroClass = classInput.value;
+
 
 
 function displayHeroes() {
     let heroesContainer = document.getElementById('heroesContainer');
     heroesContainer.innerHTML = '';
     for (i = 0; i < heroes.length; i++) {
-    let newElement = document.createElement('div');
-    newElement.className = "hero__table";
+    let newElement = document.createElement('label');
+    newElement.className = "card";
+    newElement.setAttribute('id', `song-${i + 1}`);
+    newElement.setAttribute('for', `item-${i + 1}`);
+
     newElement.innerHTML = `
-    <div class="hero__element">
-    
-    <h3>${heroes[i][0]}</h3>
+    <img src="/img/hero_card.png" alt="hero_card" class="hero__card">
+    <div class="hero__title">
+    <h2>${heroes[i][0]}</h2>
     <p>${heroes[i][1]}</p>
-    <div>
+    </div>
     `
     heroesContainer.appendChild(newElement);
     }
