@@ -8,18 +8,19 @@ function displayHeroes() {
     heroesContainer.innerHTML = '';
     for (i = 0; i < heroes.length; i++) {
     let newElement = document.createElement('label');
-    newElement.className = "card";
-    newElement.setAttribute('id', `song-${i + 1}`);
-    newElement.setAttribute('for', `item-${i + 1}`);
-
+    newElement.className = `card__${i + 1}`;
+    newElement.setAttribute('id', `card-${i + 1}`);
+    newElement.addEventListener("change", function(event) {
+        console.log(newElement.target.type)})
     newElement.innerHTML = `
     <img src="/img/hero_card.png" alt="hero_card" class="hero__card">
     <div class="hero__title">
-    <h2>${heroes[i][0]}</h2>
+    <h2 class="hero__title-name">${heroes[i][0]}</h2>
     <p>${heroes[i][1]}</p>
     </div>
     `
     heroesContainer.appendChild(newElement);
+    
     }
     
 }
