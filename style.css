@@ -147,7 +147,38 @@ h1 {
     transition: transform .4s ease;
     cursor: pointer;
   }
+
+  .card__1 {
+    transform: translatex(-80%) scale(.6);
+    opacity: .2;
+    z-index: 0;
+  }
+  .card__2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .4;
+    z-index: 1;
+  }
   
+  .card__3 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+    
+    img {
+      box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+    }
+  }
+  .card__4 {
+    transform: translatex(40%) scale(.8);
+    opacity: .4;
+    z-index: 1;
+  }
+  .card__5 {
+    transform: translatex(80%) scale(.6);
+    opacity: .2;
+    z-index: 0;
+  }
+ 
   img {
     width: auto;
     height: 360px;
@@ -157,9 +188,7 @@ h1 {
 
   /*
   #item-1:checked ~ .cards #song-5, #item-2:checked ~ .cards #song-3, #item-3:checked ~ .cards #song-1 {
-    transform: translatex(-80%) scale(.6);
-    opacity: .2;
-    z-index: 0;
+    
   }
 
   #item-1:checked ~ .cards #song-4, #item-2:checked ~ .cards #song-5, #item-3:checked ~ .cards #song-3 {
