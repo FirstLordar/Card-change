@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,39 +12,37 @@
     <header class="header">
         <div class="header__content">
             <div class="header__title">
-             <h1>Dota Generate</h1>  
+                <h1>Dota Generate</h1>
             </div>
-           
             <nav class="header__nav">
                 <a href="#" class="header__nav--links">Support</a>
                 <a href="#" class="header__nav--links">Donate</a>
                 <a href="#" class="header__nav--links">Contact Us</a>
-            </div>
+        </div>
         </div>
     </header>
-    <section class="section">
-    <div class="container">
 
-    <input type="radio" name="slider" id="item-1" checked>
-    <input type="radio" name="slider" id="item-2">
-    <input type="radio" name="slider" id="item-3">
-    <input type="radio" name="slider" id="item-4">
-    <input type="radio" name="slider" id="item-5">
+    <main>
+        <section class="section">
+            <div class="container">
+                
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <input type="radio" name="slider" id="item-4">
+                <input type="radio" name="slider" id="item-5">
+                <div class="cards" id="heroesContainer">
+                </div>
 
-  <div class="cards" id="heroesContainer">
-    
-    </div>
+                <div class="heroes__actions">
+                    <input type="text" placeholder="Имя" id="heroName">
+                    <input type="text" placeholder="Класс" id="heroClass">
+                    <button id="addButton" class="add_button">Создать Героя</button>
+                </div>
 
-    <div class="heroes__actions">
-    <input type="text" placeholder="Имя" id="heroName">
-    <input type="text" placeholder="Класс" id="heroClass">
-    <button id="addButton" class="add_button">Создать Героя</button>
-    </div>
-   
-</div>
-
-
-
-
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
